@@ -1,0 +1,538 @@
+ /*FOR ALL SECTIONS*/
+ /*general*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #6A7867 ;
+}
+h1{
+    font-size: 26px;
+    line-height: 32px;
+    color: #6fa5a1;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+h3{
+    font-size: 20px;
+    color: #6A7867;
+
+}
+p{
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+
+a{
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 20px 120px;
+    background: #ede9E3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 25px;
+    color: #6fa5a1;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+nav a{
+    font-size: 18px;
+    color: #6fa5a1;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+nav a:hover, 
+nav a.active{
+    color: #cbfffc;
+
+}
+/*END OF general*/
+
+
+/*ABOUT ME SECTION*/
+.about{
+  width: 100%;
+  padding: 60px 0;
+  background-color: #c0bcb5;
+  display: flex; 
+  min-height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  column-gap: 60px; 
+
+}
+
+.about-image{
+    width: 300px;
+    border-radius: 300px;
+}
+
+.about-txt{
+    flex-basis: 2000px;
+}
+
+.about-txt h2{
+    font-size: 96px;
+    line-height: 106px;
+    color: #6fa5a1;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about-txt p{
+    border-left: 10px solid #6fa5a1;
+    padding-left: 20px;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.about-txt{
+    flex-basis: 2000px;
+}
+
+.about a{
+    margin-top: 20px;
+    font-size: 25px;
+    display: block;
+    background-color:#6fa5a1;
+    padding: 10px 20px;
+    width: fit-content;
+
+}
+
+/*END OF ABOUT*/
+/*SKILLS SECTION*/
+
+.skills{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #ddd9d2;
+    display: flex; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    column-gap: 60px; 
+  
+  }
+  
+.skills-txt h2{
+    font-size: 96px;
+    line-height: 106px;
+    color: #6fa5a1;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+body{
+    align-items: center;
+    justify-content: center;
+    background: #ddd9d2;
+}
+
+.skill{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #6A7867;
+    text-transform: uppercase;
+    margin: 20px 0;
+
+}
+
+.skill-bar{
+    height: 14px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height: 14px;
+    background: #6A7867;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+content: attr(per);
+position: absolute;
+padding: 4px 6px;
+background: #6d7c6a4d;
+border-radius: 4px;
+font-size: 12px;
+top: -35px;
+right: 0;
+transform: translateX(50%);
+}
+
+.skill-per::after{
+content: "";
+position: absolute;
+width: 10px;
+height: 10px;
+background:#6d7c6a4d;
+top: -20px;
+right: 0;
+transform: translateX(50%) rotate(45deg);
+border-radius: 2px;
+}
+@keyframes fillBars{
+    from{
+        width: 0;
+
+    }
+    to{
+        width: 100%;
+    }
+}
+/*END OF SKILLS*/
+
+
+/*PROJECT SECTION*/
+.projects{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #c0bcb5 ;
+    display: flex; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    column-gap: 60px; 
+  
+}
+
+.proj-txt h2{
+    font-size: 96px;
+    line-height: 106px;
+    color: #6fa5a1;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.container-pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap:2rem;
+}
+
+.container-pro .project-box{
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: #ede9E3;
+    border-radius: 3px;
+}
+
+.project-box p{
+    color: #9b9791;
+}
+.icon-pro {
+    color: #ffffff;
+}
+.icon-pro2{
+    color: #ffffff;
+}
+
+.projects a{
+    font-size: 18px;
+    color: white;
+    background: #6fa5a1;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+    line-height: 10px;
+}
+.btn{
+    background: #6fa5a1;
+    width: 160px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #c0bcb5;
+    transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px #6fa5a1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+
+}
+/*END OF PROJECTS*/
+
+/*ACHEIVEMENT SECTION*/
+/*fully completed pascal course, fully completed c++ course, */
+
+.ach-txt h2{
+    font-size: 50px;
+    line-height: 96px;
+    color: #6fa5a1;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.achievements{
+    width: 100%;
+    padding: 60px 0px;
+    background-color: #ddd9d2;
+    display: flex; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    column-gap: 60px; 
+  
+}
+
+.container-ach{
+    padding: 10px 50px;
+    position: relative;
+    width: 32%;
+    background: #ffffff;
+}
+.text-box{
+    padding: 20px 30px;
+    background: #c0bcb5;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+.left-container{
+    left: 0;
+
+}
+.right-container{
+    left: 2%;
+
+}
+.container-ach img{
+    position: absolute;
+    width: 40px;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+
+}
+
+.right-container img{
+    left: 1%;
+}
+
+.left-container img{
+    right: 92.5%;
+}
+
+.text-box h2{
+    font-size: 36px; 
+    color: #6A7867;
+    line-height: normal;
+}
+.text-box small{
+    color: #6A7867;
+    padding-left: 5px;
+}
+.text-box p{
+    padding-left: 5px;
+    font-size: 18px;
+    line-height: 20px;
+}
+/*END OF ACHIEVEMENTS*/
+
+
+/*CONTACT SECTION*/
+   .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container-tact{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #c0bcb5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.item{
+    width: 100%;
+    height: 550px;
+    max-width: 820px;
+    background: #6d7c6a4d;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    z-index: 1000;
+}
+.contactt{
+    background: white;
+}
+
+.submit-form{
+    background: #6fa5a1;
+}
+.first-text{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 35px;
+    color: #6fa5a1;
+    font-weight: 600;
+
+}
+.contact-image{
+    height: 320px;
+    width: 320px;
+    padding-left: 30px;
+
+}
+
+.social-icon{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin: 2px 10px;
+}
+.social-icon i{
+    background: #6fa5a1;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.social-icon i:hover{
+    background: #cbfffc;
+    color: #6fa5a1;
+}
+
+.third-text{
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+ form{
+    padding: 0 50px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.input-box{
+    height: 40px;
+    width: 80%;
+    margin: 30px 0;
+    position: relative;
+
+}
+.input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+    color: white;
+    font-size: 16px;
+
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    padding-left: 10px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    transition: .3s;
+}
+
+.input-box .input:focus ~ label,
+.input-box .input:valid ~ label{
+    top: -1px;
+    left: 10px;
+    background: #6fa5a1;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 5px;
+
+}
+
+textarea.input{
+    resize: none;
+    height:150px;
+    overflow: auto;
+}
+.btn{
+    position: relative;
+    top: 100px;
+    background: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    width: 30%;
+    font-size: 16px;
+    color: #6fa5a1;
+    cursor: pointer;
+    font-weight: 300;
+}
+/*END OF CONTACT*/
